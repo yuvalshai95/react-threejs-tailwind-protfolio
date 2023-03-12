@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rome": "^11.0.0"
   },
   "devDependencies": {
     "@emailjs/browser": "^3.10.0",
