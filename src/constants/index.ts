@@ -24,8 +24,53 @@ import {
     tripguide,
     threejs,
   } from "../assets";
+
+  // TODO: move to interfaces folder
   
-  export const navLinks = [
+  export interface INavLink {
+    id: string;
+    title: string;
+    }
+    
+    export interface IService {
+    title: string;
+    icon: string;
+    }
+    
+    export interface ITechnology {
+    name: string;
+    icon: string;
+    }
+    
+    export interface IExperience {
+    title: string;
+    companyName: string;
+    icon: string;
+    iconBg: string;
+    date: string;
+    points: string[];
+    }
+    
+    export interface ITestimonial {
+    testimonial: string;
+    name: string;
+    designation: string;
+    company: string;
+    image: string;
+    }
+    
+    export interface IProject {
+    name: string;
+    description: string;
+    tags: {
+    name: string;
+    color: string;
+    }[];
+    image: string;
+    sourceCodeLink: string;
+    }
+
+  export const navLinks: INavLink[] = [
     {
       id: "about",
       title: "About",
@@ -40,13 +85,13 @@ import {
     },
   ];
   
-  const services = [
+  const services: IService[] = [
     {
       title: "Web Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Angular/React Developer",
       icon: mobile,
     },
     {
@@ -54,12 +99,12 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Problem Solving",
       icon: creator,
     },
   ];
   
-  const technologies = [
+  const technologies: ITechnology[] = [
     {
       name: "HTML 5",
       icon: html,
@@ -114,10 +159,10 @@ import {
     },
   ];
   
-  const experiences = [
+  const experiences: IExperience[] = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
+      companyName: "Starbucks",
       icon: starbucks,
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
@@ -130,7 +175,7 @@ import {
     },
     {
       title: "React Native Developer",
-      company_name: "Tesla",
+      companyName: "Tesla",
       icon: tesla,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
@@ -143,7 +188,7 @@ import {
     },
     {
       title: "Web Developer",
-      company_name: "Shopify",
+      companyName: "Shopify",
       icon: shopify,
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
@@ -156,7 +201,7 @@ import {
     },
     {
       title: "Full stack Developer",
-      company_name: "Meta",
+      companyName: "Meta",
       icon: meta,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
@@ -169,7 +214,7 @@ import {
     },
   ];
   
-  const testimonials = [
+  const testimonials: ITestimonial[] = [
     {
       testimonial:
         "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -196,7 +241,7 @@ import {
     },
   ];
   
-  const projects = [
+  const projects: IProject[] = [
     {
       name: "Car Rent",
       description:
@@ -216,7 +261,7 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      sourceCodeLink: "https://github.com/",
     },
     {
       name: "Job IT",
@@ -237,7 +282,7 @@ import {
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      sourceCodeLink: "https://github.com/",
     },
     {
       name: "Trip Guide",
@@ -258,7 +303,7 @@ import {
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      sourceCodeLink: "https://github.com/",
     },
   ];
   
