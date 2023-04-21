@@ -21,11 +21,14 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import angular from "./tech/angular.png";
+import nest from "./tech/nest.png";
+import jest from "./tech/jest.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+
+import fibonatix from './company/fibonatix.png'
+import zoominfo from './company/zoominfo.png'
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -53,11 +56,12 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  fibonatix,
+  zoominfo,
   carrent,
   jobit,
   tripguide,
+  angular,
+  nest,
+  jest,
 };
